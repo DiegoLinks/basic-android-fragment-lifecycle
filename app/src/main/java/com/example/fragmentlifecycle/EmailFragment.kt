@@ -31,10 +31,10 @@ class EmailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_email, container, false)
-        emailTitle = view?.findViewById(R.id.email_detail_title_text_view)
-        emailFrom = view?.findViewById(R.id.email_detail_from_text_view)
-        emailDate = view?.findViewById(R.id.email_detail_date_text_view)
-        emailBody = view?.findViewById(R.id.email_detail_body_text_view)
+        emailTitle = view?.findViewById(R.id.tv_detail_subject)
+        emailFrom = view?.findViewById(R.id.tv_detail_from)
+        emailDate = view?.findViewById(R.id.tv_detail_date)
+        emailBody = view?.findViewById(R.id.tv_body)
         return view
     }
 
