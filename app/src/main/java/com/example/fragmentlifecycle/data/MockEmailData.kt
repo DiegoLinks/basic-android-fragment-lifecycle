@@ -172,17 +172,6 @@ object MockEmailData {
                     "Love of my life\n" +
                     "Love of my life\n" +
                     "Ooh, ooh\n" +
-                    "\n" +
-                    "Tradução\n" +
-                    "Adicionar à playlist\n" +
-                    "Tamanho\n" +
-                    "A\n" +
-                    "A\n" +
-                    "Cifra\n" +
-                    "Imprimir\n" +
-                    "Corrigir\n" +
-                    "Marcações na letra\n" +
-                    "\n" +
                     "\n",
             date = "May 8"
         )
