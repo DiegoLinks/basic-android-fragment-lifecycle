@@ -1,11 +1,12 @@
 package com.example.fragmentlifecycle
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fragmentlifecycle.Args.ARG_EMAIL_ID
@@ -27,9 +28,8 @@ class ListFragment : Fragment() {
         val emails = MockEmailData.getEmails()
 
         recyclerView.adapter = EmailListAdapter(emails) { email ->
-            val intent = Intent(requireContext(), EmailActivity::class.java)
-            intent.putExtra(ARG_EMAIL_ID, email.id)
-            startActivity(intent)
+            val bundle = bundleOf(ARG_EMAIL_ID to email.id)
+            Navigation.findNavController(view).navigate(R.id.action_listFragment_to_emailFragment, bundle)
         }
 
         return view

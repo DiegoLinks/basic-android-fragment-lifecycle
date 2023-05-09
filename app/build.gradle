@@ -41,7 +41,12 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    //Glide - Glide is an image loading and display library on Android read more in https://github.com/bumptech/glide
+    //Glide - Is an image loading and display library on Android read more in https://github.com/bumptech/glide
     //Glide - É uma biblioteca para o carregamento de imagens leia mais em https://github.com/bumptech/glide
     implementation 'com.github.bumptech.glide:glide:4.15.1'
+
+    //Jetpack Navigation - Helps to manage and navigate between different destinations (Activities, Fragments, etc) in a safe way and with good practices.
+    //Jetpack Navigation - Serve para gerenciar e navegar entre diferentes destinos (Activities, Fragments, etc) de forma segura e com boas práticas.
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
 }
