@@ -12,10 +12,10 @@
             android:id="@+id/email_detail_from_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="16dp"
-            android:paddingTop="16dp"
+            android:paddingHorizontal="@dimen/spacing_m"
+            android:paddingTop="@dimen/spacing_m"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="@dimen/text_size_l"
             android:textStyle="bold"
             tools:text="user1@example.com" />
 
@@ -23,20 +23,19 @@
             android:id="@+id/email_detail_date_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="16dp"
-            android:paddingTop="8dp"
+            android:paddingHorizontal="@dimen/spacing_m"
+            android:paddingTop="@dimen/spacing_s"
             android:textColor="@color/black"
-            android:textSize="14sp"
             tools:text="2022-05-01 10:00" />
 
         <TextView
             android:id="@+id/email_detail_title_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="16dp"
-            android:paddingTop="8dp"
+            android:paddingHorizontal="@dimen/spacing_m"
+            android:paddingTop="@dimen/spacing_s"
             android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textSize="@dimen/text_size_l"
             android:textStyle="bold"
             tools:text="Meeting invitation" />
 
@@ -44,10 +43,10 @@
             android:id="@+id/email_detail_body_text_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingHorizontal="16dp"
-            android:paddingTop="8dp"
+            android:paddingHorizontal="@dimen/spacing_m"
+            android:paddingTop="@dimen/spacing_s"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="@dimen/text_size_m"
             tools:text="Hi, I would like to invite you to our meeting tomorrow at 10 AM." />
 
     </LinearLayout>

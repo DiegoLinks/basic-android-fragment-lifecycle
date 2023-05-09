@@ -25,6 +25,7 @@ class EmailFragment : Fragment() {
             emailId = it.getString(ARG_EMAIL_ID)
         }
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -36,12 +37,13 @@ class EmailFragment : Fragment() {
         emailBody = view?.findViewById(R.id.email_detail_body_text_view)
         return view
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         val email = getEmail()
 
-        emailTitle?.text = email.title
+        emailTitle?.text = email.subject
         emailFrom?.text = email.from
         emailDate?.text = email.date
         emailBody?.text = email.body
@@ -49,6 +51,6 @@ class EmailFragment : Fragment() {
 
     private fun getEmail(): Email {
         val email = MockEmailData.getEmailById(emailId ?: "")
-        return email ?: Email("", "", "", "", "")
+        return email ?: Email("", "", "", "", "", "", "","")
     }
 }
